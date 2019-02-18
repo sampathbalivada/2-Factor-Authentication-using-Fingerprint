@@ -66,11 +66,5 @@ function login(){
 }
 
 function logout(){
-  // var email = firebase.auth().currentUser.email;
-  // var db = firebase.firestore();
-  // var docRef = db.collection('auth').doc(email);
-  // docRef.set({
-  //   'state' : '0',
-  // });
   firebase.auth().signOut();
 }
