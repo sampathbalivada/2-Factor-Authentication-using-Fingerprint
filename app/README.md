@@ -1,16 +1,13 @@
-# two_factor_auth
+# 2 Factor Authentication
 
-2FA using Fingerprint
+2FA using Fingerprint.
+> The app package name is "cf.sampathbalivada.twofactorauth"
 
-## Getting Started
+## Important [Required]
+Missing "google-services.json". Configure with your own firebase project.
+The instruction for setup are located in the [Firebase Docs](https://firebase.google.com/docs/flutter/setup)
 
-This project is a starting point for a Flutter application.
+> The app doesn't provide a way to sign up. Add the functionality or use Firebase console to add users.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### About the implementation
+The implementation/approach is not optimised for production and might require changes. You may use it at your own risk.
