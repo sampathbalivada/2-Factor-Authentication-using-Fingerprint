@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>2-Factor Authentication</h3>
+    <input type="email" placeholder="Email" id="email_field" />
+    <input type="password" placeholder="Password" id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div" style="color : green;">
+    <h3>2-Factor Authentication</h3>
+    <p id="user_para">Authentication successful.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div id="auth_div" class="loggedin-div" style="color :blue;">
+    <h3>2-Factor Authentication</h3>
+    <p>Authenticate through your Android/iOS device.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+
+  <script>
+    // Initialize Firebase
+    // Add your config here. Failing to do so results in error.
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
